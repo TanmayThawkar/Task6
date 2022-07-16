@@ -1,0 +1,36 @@
+//Write a “person” class to hold all the details.
+//INPUT CODE
+class Person{
+    constructor(name,age,gender,skin_tone,height,designation) {
+        this.name=name;
+        this.age=age;
+        this.gender=gender;
+        this.skin_tone=skin_tone;
+        this.height=height;
+        this.designation=designation;
+    }
+getDetails(){
+ let data=`
+ Name:${this.name}
+ Age:${this.age}
+ Gender:${this.gender}
+ Skin_Tone:${this.skin_tone}
+ Height:${this.height}
+ Designation:${this.designation}
+ `
+ return data;
+  }
+}
+let object=new Person("Tanmay",21,"Male","Fair",5.11,"Student")
+console.log(object.getDetails());
+
+
+//OUTPUT:
+PS C:\Users\TANMAY\Desktop\Guvi> node oops.js                         
+
+ Name:Tanmay
+ Age:21
+ Gender:Male
+ Skin_Tone:Fair
+ Height:5.11
+ Designation:Student
